@@ -1,4 +1,4 @@
-const API_KEY = 'your api here'; //add your own API Key from OpenWeather API here
+const API_KEY = '9bd1f94ad265c7d4bfff571d6b2091d6'; //add your own API Key from OpenWeather API here
 
 // DOM Elements
 
@@ -32,7 +32,7 @@ const showWeather = async (city) => {
 	const data = await checkWeather(city);
 	//console.log(data);
 
-	if (data.cod === '404') {
+	if (data.code === '404') {
 		return errorMessage.classList.remove('hide');
 	}
 
