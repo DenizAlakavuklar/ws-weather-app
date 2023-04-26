@@ -32,7 +32,7 @@ const showWeather = async (city) => {
 	const data = await checkWeather(city);
 	//console.log(data);
 
-	if (data.code === '404') {
+	if (data.cod === '404') {
 		return errorMessage.classList.remove('hide');
 	}
 
